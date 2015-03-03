@@ -1,8 +1,11 @@
 function preload() {
 
 	// audio data
-	trackNames = ['1- Bass Drum','2- Snare Drum and Cymbals','3- Bass','4- Guitar','5- Vocals','6- Keys'];
-	
+	//trackNames = ['1- Bass Drum','2- Snare Drum and Cymbals','3- Bass','4- Guitar','5- Vocals','6- Keys'];
+	trackNames = ['MusicDelta_ModalJazz_STEM_01', 'MusicDelta_ModalJazz_STEM_02',
+    'MusicDelta_ModalJazz_STEM_03', 'MusicDelta_ModalJazz_STEM_04',
+    'MusicDelta_ModalJazz_STEM_05'];
+
 	//trackNames = ['1- Bass Drum','2- Snare Drum and Cymbals'];
 	
 	function removeSpaces(element) {
@@ -12,7 +15,7 @@ function preload() {
 	
 	sounds = [];
 	for (var i=0; i<trackNames.length; i++) {
-		sounds.push(loadSound('sounds/'+trackNames[i] + '.mp3'));
+		sounds.push(loadSound('sounds/'+trackNames[i] + '.ogg'));
 	}
 
 	// keys
@@ -20,7 +23,7 @@ function preload() {
 //	keyControls = ['Q','W','E','R','T','Y','U','I','O','P'];
 	numberKeys = ['1','2','3','4','5','6','7','8','9'];
 	
-	currentTrack = 4;
+	currentTrack = 2;
 
 	// drawing
 	w = 1200;
